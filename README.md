@@ -25,16 +25,19 @@ js文件介绍：
     （5）录制记录保存在本地MongoDB数据库中。
 
 ## Deployment
+    
     环境要求：
     （1）下载代码https://github.com/jiazhuangle/post-ninja
     （2）安装node.js  10.15及以上版本
     （3）安装npm  6.9.0及以上版本
     （4）安装MongoDB  建议3.2.7及以上版本
+    
     项目运行：
-    （1）npm install
-    （2）cd post-ninja-master
+    （1）cd post-ninja-master
+    （2）npm install
      (3) node Record.js(node Playback.js)
 ## About us
+    
     我们团队主要致力研发于各类测试软件的研发，并为其相应的项目进行专业的设计与开发。
     author:daoxiaonoodles
     author:jiazhuangle
