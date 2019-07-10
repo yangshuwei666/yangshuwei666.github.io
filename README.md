@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# post-ninja
 
-You can use the [editor on GitHub](https://github.com/yangshuwei666/yangshuwei666.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Introduction
+基于puppeteer，进行web接口录制和回放。
+js文件介绍：
+    record.js:录制接口  
+    playback.js:回放接口  
+    package.json:模块信息描述文件
+    common.js:基础方法  
+    recordconfig.js:录制配置文件  
+    playbackconfig.js:回放配置文件  
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## User manual
+     用户录制过程：
+    （1）用户打开项目后，通过package.json把所需的依赖全部安装在本地环境中（命令：npm install）。
+    （2）通过修改MongDBConfig.js配置本地MongoDB数据库url（默认'mongodb://root:root@localhost:27017/），
+         同时创建db:'puppeteer',coverage_collection:'coverage',
+                interface_collection:'interface',
+	            interfaceExec_collection:'interfaceExec',
+	            demo_collection:'demo'
+    （3）修改RecordConfig,js的URL来指定默认打开浏览器的网址（默认url:'http://localhost:8080/xxx/login'）。
+    （4）运行Record.js（命令：node Record.js）来进行浏览器录制。
+    （5）录制记录保存在本地MongoDB数据库中。
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yangshuwei666/yangshuwei666.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Deployment
+    （1）下载代码https://github.com/jiazhuangle/post-ninja
+    （2）安装node.js  10.15及以上版本
+    （3）安装npm  6.9.0及以上版本
+    （4）安装MongoDB  建议3.2.7及以上版本
+    
+## About us
+    我们团队主要致力研发于各类测试软件的研发，并为其相应的项目进行专业的设计与开发。
+    author:daoxiaonoodles
+    author:jiazhuangle
